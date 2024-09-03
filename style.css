@@ -1,0 +1,260 @@
+/* Import Poppins font from Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* Reset margin, padding and set box-sizing to border-box for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define custom CSS variables for colors */
+:root {
+  --ash-light: rgb(240, 242, 249);
+  --ash-dark: rgb(179, 179, 187);
+  --myorange: rgb(252, 94, 2);
+  --text-gray: rgb(128, 123, 123);
+  --transition-duration: 0.3s;
+}
+
+/* Set base font family and styles for the body */
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Global styles for headings */
+b {
+  font-size: 60px;
+}
+
+h1 {
+  font-size: 50px;
+  color: var(--myorange);
+  margin: 0;
+}
+
+h3 {
+  padding: 5px;
+}
+
+/* Flex container for layout */
+.flex-container {
+  display: flex;
+}
+
+/* Style for the left sidebar */
+.left-flex {
+  background-color: var(--myorange);
+  text-align: center;
+  color: white;
+  width: 18%;
+  padding-top: 50px;
+  padding-bottom: 460px;
+  position: fixed;
+}
+
+/* Link styles for normal and visited states */
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hover effect for sidebar h3 links */
+.left-flex ul li h3:hover,
+#sujon:hover {
+  transition: var(--transition-duration);
+  background-color: rgba(237, 218, 218, 0.822);
+  color: black;
+}
+
+/* Main content area */
+.main-flex {
+  margin-left: 20%;
+  margin-right: 2%;
+  padding: 5px;
+}
+
+/* Flex container for rows */
+.row {
+  display: flex;
+}
+
+/* Style for columns */
+.col {
+  flex-direction: 50%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* Style for person columns */
+.col-person {
+  background-color: var(--ash-light);
+  flex-direction: 33.33%;
+  padding: 5px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.person {
+  color: var(--text-gray);
+}
+
+/* Override styles for heading and price text */
+.heading,
+.num,
+.num2 {
+  color: black !important;
+}
+
+/* Style for horizontal rule */
+hr {
+  width: 50px;
+  border: 5px solid var(--myorange);
+  float: left;
+  border-radius: 5px;
+  margin: 20px 20px 20px 0;
+}
+
+/* Gap element for spacing */
+.gap {
+  height: 50px;
+}
+
+/* Flex container for packages */
+.package-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Style for individual package items */
+.package-item {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Style for tables within packages */
+table {
+  width: 100%;
+  min-width: 340px;
+  border-collapse: collapse;
+}
+
+/* Style for table cells */
+td {
+  background-color: var(--ash-light);
+  border-bottom: 1px solid var(--ash-dark);
+  text-align: center;
+  padding: 15px;
+}
+
+/* Style for table headers */
+th {
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style for large text elements */
+.big-40 {
+  font-size: 40px;
+  color: var(--text-gray);
+}
+
+/* Wrapper style */
+.wrapper {
+  color: var(--text-gray);
+}
+
+/* Room count styles */
+.room-cnt,
+.room-cnt2,
+.room {
+  font-size: 20px;
+}
+
+/* Calculator style */
+#calc {
+  font-size: 40px;
+  color: var(--text-gray);
+}
+
+/* General span styles */
+span {
+  color: var(--text-gray);
+}
+
+/* Styles for plus and minus buttons */
+.plus,
+.minus,
+.plus2,
+.minus2 {
+  cursor: pointer;
+  color: black;
+}
+
+/* Style for table footer cells */
+.footer td {
+  padding-top: 40px;
+  border: none;
+}
+
+/* Style for the basic package header */
+.basic {
+  background-color: var(--ash-dark);
+  color: white;
+}
+
+/* Style for the pro package header */
+.pro {
+  background-color: var(--myorange);
+  color: white;
+}
+
+/* Style for signup buttons */
+.signup-button,
+.signup-button-2 {
+  width: 110px;
+  height: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+  transition: var(--transition-duration);
+}
+
+/* Hover effect for signup buttons */
+.signup-button:hover,
+.signup-button-2:hover {
+  background-color: var(--myorange);
+  color: white;
+}
+
+/* Styles for text and email input fields */
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+/* Style for submit input button */
+input[type="submit"] {
+  width: 100%;
+  background-color: var(--myorange);
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+}
+
+/* Footer gap style */
+.foot-gap {
+  background-color: var(--ash-light);
+  width: 100%;
+  padding: 60px;
+}
